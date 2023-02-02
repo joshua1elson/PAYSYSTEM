@@ -1,0 +1,82 @@
+*{
+    justify-content: center;
+    margin: 1% 10%;
+
+}
+.container{
+    background: orangered;
+    text-align: center;
+    color: rgb(55, 35, 165);
+    justify-content: center;
+    margin: 0%;
+    border-radius: 5rem;
+    box-shadow: 0 15px 20px rgb(248, 97, 42); ;
+    
+}
+
+.container .headpay{
+    background: transparent;
+    margin: 1%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+.container .logo img{
+    background: black;
+    width: 30%;
+    height: 20%;
+}
+form{
+    font-size: 1.5rem;
+    padding: 5%;
+
+}
+form input , textarea{
+    padding: 4%;
+    width: 80%;
+    text-align: center;
+   
+}
+form label{
+    color: rgb(55, 35, 165);
+    width: 80%;
+}
+form option , select{
+    font-size: 1.5rem;
+    padding: 3%;
+    width: 90%;
+    text-align: center;
+}
+
+form button{
+    background: rgb(55, 35, 165) ;
+    padding: 1rem;
+    border-radius: 10px;
+    color: orangered;
+    
+}
+
+@media only screen and (max-width:600px){
+    *{
+        margin: 0% !important;
+    }
+    .container .headpay{
+        font-size: .8rem !important;
+    }
+    form{
+        padding: 3% !important;  
+    }
+    form input , textarea{
+        width: 60%;
+        margin: 2% !important;
+    }
+    form label{
+        
+        font-size: 1.2rem !important;
+        padding: 10%;
+    }
+    form option , select{
+        font-size: .8rem;
+    }
+   
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUYGET PAY</title>
+    <link rel="icon" type="image/x-icon" href="/asset/logo-r.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+         <div class="headpay">
+            <h1>BUYGET PAY SYSTEM</h1>
+         </div>
+         <div class="logo">
+            <img src="./asset/logo-m.png" alt="">
+         </div>
+
+        <form onsubmit="sendEmail(); reset(); return false; ">
+            
+            
+            <input type=" text" id="name" placeholder="YOUR NAME" required>
+            <input type=" email" id="email" placeholder="CALL NUMBER" required>
+            
+           <textarea id="message" rows="2" placeholder="PAYMENT TITLE"></textarea>
+            <br>
+           <label for="pays">SELECT YOUR PAYMENT METHOD:</label>
+               <select id="pay" name="pays">
+               <option value="volvo">MOBILE MONEY</option>
+               <option value="saab">BANK PAYMENT</option>
+               <option value="fiat">CARD PAYMENT</option>
+               <option value="audi">BITCOIN</option>
+            </select>
+
+           <button type="submit">PAY NOW</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
