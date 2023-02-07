@@ -1,26 +1,33 @@
 *{
-    justify-content: center;
-    margin: 1% 10%;
-
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
 }
 .container{
-    background: orangered;
+    background: hsl(16, 100%, 50%, 0.75);
     text-align: center;
-    color: rgb(55, 35, 165);
+    color: whitesmoke;
     justify-content: center;
     margin: 0%;
-    border-radius: 5rem;
-    box-shadow: 0 15px 20px rgb(248, 97, 42); ;
-    
+    border-radius: 1rem;
+    box-shadow: 0 15px 20px rgb(248, 97, 42);
+    position: relative;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container .headpay{
     background: transparent;
     margin: 1%;
-    padding: 0%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5rem;
+    font-size: x-large;
 }
+
 .container .logo img{
     background: black;
     width: 30%;
@@ -28,19 +35,41 @@
 }
 form{
     font-size: 1.5rem;
-    padding: 5%;
+    padding: 1.25rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
 
-}
-form input , textarea{
-    padding: 4%;
-    width: 80%;
+form input , textarea, form select{
+    padding: 10px 8px;
     text-align: center;
-   
+    width: 100%;
+    outline: none;
+    border: thin solid lightgrey;
+    border-radius: 3px;
+    background-color: ghostwhite;
 }
-form label{
-    color: rgb(55, 35, 165);
-    width: 80%;
+
+form input:active, form textarea:active, form select:active{
+    outline-width: 10px;
+    outline-style: solid;
+    outline-color: transparent;
 }
+
+#form_background_overlay{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: inherit;
+}
+
 form option , select{
     font-size: 1.5rem;
     padding: 3%;
@@ -51,32 +80,44 @@ form option , select{
 form button{
     background: rgb(55, 35, 165) ;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     color: orangered;
-    
+    outline: unset !important;
+    appearance: unset;
+    margin-top: 0.65em;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
-@media only screen and (max-width:600px){
-    *{
-        margin: 0% !important;
-    }
+form button:hover{
+    background: rgb(55, 75, 165);
+    color: ghostwhite;
+}
+
+form textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 2.4rem;
+    min-height: 2rem;;
+}
+
+#head{
+    margin: 1.25em auto;
+}
+
+@media only screen and (max-width:768px){
     .container .headpay{
-        font-size: .8rem !important;
-    }
-    form{
-        padding: 3% !important;  
-    }
-    form input , textarea{
-        width: 60%;
-        margin: 2% !important;
-    }
-    form label{
-        
-        font-size: 1.2rem !important;
-        padding: 10%;
+        font-size: 1rem;
     }
     form option , select{
-        font-size: .8rem;
+        font-size: 1rem;
     }
-   
+
+    .container{
+        margin: 1rem;
+        box-shadow: 0 0 5px 0 orangered;
+        border: thin solid blue;
+        border-radius: 5px;
+    }
 }
