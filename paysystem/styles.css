@@ -23,9 +23,10 @@ body{
 
 .container .headpay{
     background: transparent;
-    margin: 1%;
+    padding: 10px 6px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
+    margin-bottom: 5px;
 }
 
 .container .logo img{
@@ -82,12 +83,11 @@ form button{
     padding: 1rem;
     border-radius: 5px;
     color: orangered;
-    outline: unset !important;
-    appearance: unset;
     margin-top: 0.65em;
     width: 100%;
     cursor: pointer;
     transition: all 0.5s;
+    border: 1px solid transparent;
 }
 
 form button:hover{
