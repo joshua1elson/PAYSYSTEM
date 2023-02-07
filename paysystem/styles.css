@@ -35,7 +35,7 @@ body{
     height: 20%;
 }
 form{
-    font-size: 1.5rem;
+    font-size: large;
     padding: 1.25rem 1.8rem;
     display: flex;
     flex-direction: column;
@@ -52,6 +52,7 @@ form input , textarea, form select{
     border: thin solid lightgrey;
     border-radius: 3px;
     background-color: ghostwhite;
+    font-size: normal;
 }
 
 form input:active, form textarea:active, form select:active{
@@ -71,18 +72,11 @@ form input:active, form textarea:active, form select:active{
     border-radius: inherit;
 }
 
-form option , select{
-    font-size: 1.5rem;
-    padding: 3%;
-    width: 90%;
-    text-align: center;
-}
-
 form button{
     background: rgb(55, 35, 165) ;
     padding: 1rem;
     border-radius: 5px;
-    color: orangered;
+    color: white;
     margin-top: 0.65em;
     width: 100%;
     cursor: pointer;
