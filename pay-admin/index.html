@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>pay-admin</title>
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle"> 
+    <div class="sidebar">
+        <div class="sidebar-brand">
+          <h2>
+            <span class="lab la-accusoft"></span>
+            <span>BUYGET</span>
+          </h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="./index.html" class="active"><span class="las la-igloo"></span>
+                        <span>DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#recent-grid"><span class="las la-clipboard-list"></span>
+                        <span>Payments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><span class="las la-users"></span>
+                        <span>Admins</span>
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="#"><span class="las la-receipt"></span>
+                        <span>Call Buyget</span>
+                    </a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+           <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                Dashboard
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="search here" />  
+            </div>
+
+            <div class="user-wrapper">
+                   <img src="./asset/logobig.png" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>joshua Honu</h4>
+                    <small>super admin</small>
+                  </div>
+            </div>  
+
+        </header>
+
+        <main>
+          <div class="cards" >
+               <div class="card-single">
+                  <div>
+                       <h1>54</h1>
+                       <span>SITE VISITERS</span>
+                  </div>
+                  <div>
+                       <span class="las la-users"></span>
+                  </div>
+               </div>
+
+               <div class="card-single">
+                  <div>
+                       <h1>79</h1>
+                       <span>PAYMENT RECIEVED</span>
+                  </div>
+                  <div>
+                       <span class="las la-clipboard"></span>
+                  </div>
+               </div>
+
+               <div class="card-single">
+                  <div>
+                       <h1>124</h1>
+                       <span>PAYMENT CONFIRMED</span>
+                  </div>
+                  <div>
+                       <span class="las la-shopping-bag"></span>
+                  </div>
+               </div>
+
+               <div class="card-single">
+                  <div>
+                       <h1>$6,000.000</h1>
+                       <span>TOTAL PAYMENT</span>
+                  </div>
+                  <div>
+                       <span class="las la-wallet"></span>
+                  </div>
+               </div>
+
+          </div>  
+
+
+
+
+
+
+
+
+          <section id="recent-grid" class="recent-grid">
+            <div class="pay">
+                <div class="card-header">
+                     <h2>recent projects</h2>
+                     <button><a href="#recent-grid">see all</a> <span class="las la-arrow-right">
+                     </span></button>
+                </div>
+                <div class="card-body">
+                   <div class="table-responsive">
+                    <table width="100%">
+                        <thead>
+                             <tr>
+                                 <td>CONTACT</td>
+                                 <td>NAME</td>
+                                 <td>PAYMENT FOR</td>
+                                 <td>PAYMENT TYPE</td>
+                                 <td>AMOUNT</td>
+                                 <td>RECIEVED</td>
+                             </tr>
+                        </thead>
+                          <tbody>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status"></span>
+                                      <button>not RECIEVED</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status "></span>
+                                      <button>not RECIEVED</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status "></span>
+                                      <button>not RECIEVED</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status "></span>
+                                      <button>not RECIEVED</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status orange"></span>
+                                      <button>pending</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status orange"></span>
+                                      <button>pending</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status green"></span>
+                                      <button>RECIEVED</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status "></span>
+                                      <button>not RECIEVED</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status "></span>
+                                      <button>not RECIEVED</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status "></span>
+                                      <button>not RECIEVED</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>0548893633</td>
+                                  <td>Ever foods</td>
+                                  <td>website</td>
+                                  <td>MOMO</td>
+                                  <td>$1400</td>
+                                  <td>
+                                      <span class="status green"></span>
+                                      <button>RECIEVED</button>
+                                  </td>
+                              </tr>
+                             
+                          </tbody>
+                      </table>
+                   </div>
+                </div>
+            </div>
+          </section>  
+
+           
+          
+        </main>
+    </div>
+    
+</body>
+</html>
