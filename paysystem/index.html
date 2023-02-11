@@ -10,31 +10,32 @@
 </head>
 <body>
     <div class="container">
-         <div class="headpay">
-            <h1>BUYGET PAY SYSTEM</h1>
-         </div>
-         <div class="logo">
-            <img src="./asset/logo-m.png" alt="">
-         </div>
-
-        <form onsubmit="sendEmail(); reset(); return false; ">
+        <div id="head">
+            <div class="headpay">
+                <h1>BUYGET PAY SYSTEM</h1>
+            </div>
+            <div class="logo">
+                <img src="./asset/logo-m.png" alt="">
+            </div>
+        </div>
+         
+        <div id="form_background_overlay"></div>
+        
+        <form onsubmit="" action="" method="post">
+                    
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
             
-            
-            <input type=" text" id="name" placeholder="YOUR NAME" required>
-            <input type=" email" id="email" placeholder="CALL NUMBER" required>
-            
-           <textarea id="message" rows="2" placeholder="PAYMENT TITLE"></textarea>
+           <textarea id="message" placeholder="Payment Title"></textarea>
             <br>
-           <label for="pays">SELECT YOUR PAYMENT METHOD:</label>
-               <select id="pay" name="pays">
-               <option value="volvo">MOBILE MONEY</option>
-               <option value="saab">BANK PAYMENT</option>
-               <option value="fiat">CARD PAYMENT</option>
-               <option value="audi">BITCOIN</option>
-            </select>
-
+           <label for="pays">Select your payment method:</label>
+                <select id="pays" name="pays">
+                    <option value="mobile_money">MOBILE MONEY</option>
+                    <option value="bank">BANK PAYMENT</option>
+                    <option value="card">CARD PAYMENT</option>
+                    <option value="bitcoin">BITCOIN</option>
+                </select>
            <button type="submit">PAY NOW</button>
-
         </form>
     </div>
     
