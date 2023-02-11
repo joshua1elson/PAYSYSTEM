@@ -282,7 +282,10 @@
     <script>
         //script to highlight the current navigation tab u are in
         $(".sidebar-menu li").click(function(){
+            //remove the active class on all active buttons
             $(".sidebar-menu li a.active").removeClass("active");
+            
+            //mark the one we just clicked as active
             $(this).children("a").addClass("active")
         })
     </script>
