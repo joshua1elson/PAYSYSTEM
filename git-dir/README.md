@@ -1,0 +1,1 @@
+This is my readme file for the git-dir folder
